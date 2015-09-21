@@ -1,0 +1,1 @@
+gcc AlarmPi.c -o AlarmPi -lwiringPi
