@@ -1,4 +1,4 @@
-#include </home/Alarm/RasPi/MPU6050/MPU6050.h>
+#include </home/pi/Alarm/RasPi/MPU6050/MPU6050.h>
 #include </home/pi/wiringPi/wiringPi/wiringPiI2C.h>
 #include </home/pi/wiringPi/wiringPi/wiringPi.h>
 
