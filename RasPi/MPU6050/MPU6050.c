@@ -1,6 +1,8 @@
 #include </home/pi/Alarm/RasPi/MPU6050/MPU6050.h>
 #include </home/pi/wiringPi/wiringPi/wiringPiI2C.h>
 #include </home/pi/wiringPi/wiringPi/wiringPi.h>
+#include <stdio.h>
+#include "stdint.h"
 
 int initI2C(){
 	
@@ -36,9 +38,9 @@ void getAccValues(double *acc){
 	i2cData[5] = wiringPiI2CReadReg8 (fd, ACEL_ZOUT_L);
 
 	// merge lower and upper bytes
-	*acc[0] = (i2cData[0] << 8 | i2cData[1]);
-	*acc[1] = (i2cData[2] << 8 | i2cData[3]);
-	*acc[2] = (i2cData[4] << 8 | i2cData[5]);
+	acc[0] = (i2cData[0] << 8 | i2cData[1]);
+	acc[1] = (i2cData[2] << 8 | i2cData[3]);
+	acc[2] = (i2cData[4] << 8 | i2cData[5]);
 	
 	return;
 }
