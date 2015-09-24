@@ -19,7 +19,7 @@ while(1){
 	for (bright = 0 ; bright < 1024 ; ++bright)
 	{
 		pwmWrite (1, bright) ;
-		delay (100) ;
+		delay (1) ;
 	}
 	
 	delay(1000);
@@ -27,7 +27,7 @@ while(1){
 	for (bright = 1023 ; bright >= 0 ; --bright)
 	{
 		pwmWrite (1, bright) ;
-		delay (100) ;
+		delay (1) ;
 	}
 }
 
