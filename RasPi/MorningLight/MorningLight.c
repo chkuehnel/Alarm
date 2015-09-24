@@ -22,7 +22,7 @@ int main (void)
 		pwmWrite (1, bright) ;
 		pwmWrite (4, bright) ;
 		pwmWrite (5, bright) ;
-		delay (10) ;
+		delay (50) ;
 	}
 	
 	delay(1000);
@@ -32,7 +32,7 @@ int main (void)
 		pwmWrite (1, bright) ;
 		pwmWrite (4, bright) ;
 		pwmWrite (5, bright) ;
-		delay (10) ;
+		delay (50) ;
 	}
 
 
