@@ -18,6 +18,8 @@ int main (void)
 	for (bright = 0 ; bright < 1024 ; ++bright)
 	{
 		pwmWrite (1, bright) ;
+		pwmWrite (4, bright) ;
+		pwmWrite (5, bright) ;
 		delay (100) ;
 	}
 	
@@ -26,6 +28,8 @@ int main (void)
 	for (bright = 1023 ; bright >= 0 ; --bright)
 	{
 		pwmWrite (1, bright) ;
+		pwmWrite (4, bright) ;
+		pwmWrite (5, bright) ;
 		delay (100) ;
 	}
 
