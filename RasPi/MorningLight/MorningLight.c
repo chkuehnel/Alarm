@@ -14,6 +14,8 @@ int main (void)
 	exit (1) ;
 
 	pinMode (1, PWM_OUTPUT) ;
+	pinMode (4, PWM_OUTPUT) ;
+	pinMode (5, PWM_OUTPUT) ;
 
 	for (bright = 0 ; bright < 1024 ; ++bright)
 	{
