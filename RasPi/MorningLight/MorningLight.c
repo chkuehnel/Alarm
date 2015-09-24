@@ -1,4 +1,4 @@
-#include </home/pi/wiringPi/wiringPi/wiringPiI2C.h>
+#include </home/pi/wiringPi/wiringPi/wiringPi.h>
 
 #include <stdio.h>
 #include <stdlib.h>
