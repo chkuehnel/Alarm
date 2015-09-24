@@ -16,7 +16,8 @@ int main (void)
 	pinMode (1, PWM_OUTPUT) ;
 
 while(1){
-	for (bright = 0 ; bright < 1024 ; ++bright)
+	pwmWrite(1, 1023);
+/*	for (bright = 0 ; bright < 1024 ; ++bright)
 	{
 		pwmWrite (1, bright) ;
 		delay (1) ;
@@ -28,7 +29,7 @@ while(1){
 	{
 		pwmWrite (1, bright) ;
 		delay (1) ;
-	}
+	}/*
 }
 
 	return 0 ;
