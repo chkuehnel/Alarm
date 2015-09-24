@@ -20,13 +20,15 @@ int main (void)
 	for (bright = 0 ; bright < 1024 ; ++bright)
 	{
 		pwmWrite (1, bright) ;
-		delay (1) ;
+		delay (100) ;
 	}
+	
+	delay(1000);
 
 	for (bright = 1023 ; bright >= 0 ; --bright)
 	{
 		pwmWrite (1, bright) ;
-		delay (1) ;
+		delay (100) ;
 	}
 	}
 
