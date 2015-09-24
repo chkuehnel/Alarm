@@ -29,7 +29,7 @@ while(1){
 	{
 		pwmWrite (1, bright) ;
 		delay (1) ;
-	}/*
+	}*/
 }
 
 	return 0 ;
