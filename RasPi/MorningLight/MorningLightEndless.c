@@ -14,28 +14,27 @@ int main (void)
 	exit (1) ;
 
 	pinMode (1, PWM_OUTPUT) ;
-	pinMode (4, PWM_OUTPUT) ;
-	pinMode (5, PWM_OUTPUT) ;
 
 
 while(1){
 	pwmWrite(1, 1023);
-	pwmWrite(4, 1023);
-	pwmWrite(5, 1023);
 	
 /*	for (bright = 0 ; bright < 1024 ; ++bright)
 	{
 		pwmWrite (1, bright) ;
 		delay (1) ;
-	}
+	}*/
 	
 	delay(1000);
 
-	for (bright = 1023 ; bright >= 0 ; --bright)
+	/*for (bright = 1023 ; bright >= 0 ; --bright)
 	{
 		pwmWrite (1, bright) ;
 		delay (1) ;
 	}*/
+	pwmWrite(1, 0);
+	delay(1000);
+
 }
 
 	return 0 ;
