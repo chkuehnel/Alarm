@@ -18,17 +18,12 @@ int main (void)
 	for (bright = 0 ; bright < 1024 ; ++bright)
 	{
 		pwmWrite (1, bright) ;
-		delay (50) ;
+		delay (569) ;
 	}
 	
-	delay(1000);
+	delay(600);
 
-	for (bright = 1023 ; bright >= 0 ; --bright)
-	{
-		pwmWrite (1, bright) ;
-		delay (50) ;
-	}
-
+	pwnWrite(1,0);
 
 	return 0 ;
 }
