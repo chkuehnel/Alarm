@@ -23,8 +23,11 @@ int main (void)
 	
 	printf("Sun rised, now waiting for 10 minutes");
 	delay(600000);
-
-	pwmWrite(1,0);
+	
+	for (bright = 1023; bright >= 0; --bright){
+		pwmWrite(1, bright);
+		delay(50);
+	}
 
 	return 0 ;
 }
