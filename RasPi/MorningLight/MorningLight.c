@@ -23,7 +23,7 @@ int main (void)
 	
 	delay(600);
 
-	pwnWrite(1,0);
+	pwmWrite(1,0);
 
 	return 0 ;
 }
