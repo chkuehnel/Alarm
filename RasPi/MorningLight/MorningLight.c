@@ -21,6 +21,7 @@ int main (void)
 		delay (1758) ;
 	}
 	
+	printf("Sun rised, now waiting for 10 minutes");
 	delay(600000);
 
 	pwmWrite(1,0);
