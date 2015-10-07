@@ -3,22 +3,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <math.h>
 
 int main (void)
 {
-	int bright ;
+	int count, bright;
 
 	printf ("Starting 'Morning Light'\n") ;
 
 	if (wiringPiSetup () == -1)
-	exit (1) ;
+	exit (1);
 
-	pinMode (1, PWM_OUTPUT) ;
+	pinMode (1, PWM_OUTPUT);
 
-	for (bright = 0 ; bright < 1024 ; ++bright)
+	for (count = 0 ; count < 1024 ; ++count)
 	{
-		pwmWrite (1, bright) ;
-		delay (1758) ;
+		bright = exp( ( count * log(1023) ) / 1800 );
+		pwmWrite (1, bright);
+		delay (1000);
 	}
 	
 	printf("Sun rised, now waiting for 10 minutes");
@@ -29,5 +31,5 @@ int main (void)
 		delay(50);
 	}
 
-	return 0 ;
+	return 0;
 }
