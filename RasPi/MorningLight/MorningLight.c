@@ -16,7 +16,7 @@ int main (void)
 
 	pinMode (1, PWM_OUTPUT);
 
-	for (count = 0 ; count < 1024 ; ++count)
+	for (count = 0 ; count < 1800 ; ++count)
 	{
 		bright = exp( ( count * log(1023) ) / 1800 );
 		pwmWrite (1, bright);
